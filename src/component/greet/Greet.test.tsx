@@ -13,13 +13,13 @@ describe("Greet", () => {
     expect(testElement).toBeInTheDocument();
   });
   //or we can have nested describe
-  describe("Nested", () => {
-    test("Greet renders with a name", () => {
-      render(<Greet name="Yogesh" />);
-      const testElement = screen.getByText("Hello Yogesh");
-      expect(testElement).toBeInTheDocument();
-    });
-  });
+  // describe("Nested", () => {
+  //   test("Greet renders with a name", () => {
+  //     render(<Greet name="Yogesh" />);
+  //     const testElement = screen.getByText("Hello Yogesh");
+  //     expect(testElement).toBeInTheDocument();
+  //   });
+  // });
 
   // test("Greet renders with a name", () => {
   //   render(<Greet name="Yogesh" />);

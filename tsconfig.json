@@ -17,5 +17,9 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "../autometed/files-react-learn-deleted/__tests__",
+    "../autometed/files-react-learn-deleted/Greet.spec.tsx"
+  ]
 }
