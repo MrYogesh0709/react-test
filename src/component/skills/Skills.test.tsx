@@ -14,6 +14,7 @@ describe("Skills", () => {
     const listItemElements = screen.getAllByRole("listitem")
     expect(listItemElements).toHaveLength(skills.length)
   })
+
   test("renders login button", () => {
     render(<Skills skills={skills} />)
     const loginButton = screen.getByRole("button", {
@@ -21,6 +22,7 @@ describe("Skills", () => {
     })
     expect(loginButton).toBeInTheDocument()
   })
+
   //*for not in dom we do queryByRole
   test("Start Learning button is not rendered", () => {
     render(<Skills skills={skills} />)
@@ -43,6 +45,7 @@ describe("Skills", () => {
       {
         name: "Start learning",
       },
+      //*Default time is 1000ms
       {
         timeout: 2000,
       }

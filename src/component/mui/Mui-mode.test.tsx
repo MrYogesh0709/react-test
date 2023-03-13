@@ -5,7 +5,7 @@ import { MuiMode } from "./MuiMode"
 
 describe("MuiMode", () => {
   test("renders text correctly", () => {
-    //but we need appProvider in every component so it would be great if it's utils
+    //* we need appProvider in every component so it would be great if it's utils
     // render(<MuiMode />, {
     //   wrapper: AppProviders,
     // });

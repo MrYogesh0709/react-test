@@ -33,7 +33,7 @@ describe("Counter", () => {
   test("renders a count of 10 after clicking the set button", async () => {
     user.setup()
     render(<Counter />)
-    //for number type not textbox it's spinbutton
+    //*for number type not textbox it's spinbutton
     const amountInput = screen.getByRole("spinbutton")
     await user.type(amountInput, "10")
     expect(amountInput).toHaveValue(10)

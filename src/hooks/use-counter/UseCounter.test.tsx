@@ -20,6 +20,7 @@ describe("useCounter", () => {
 
   test("should increment a count", () => {
     const { result } = renderHook(useCounter)
+    //* Function
     act(() => {
       result.current.increment()
     })

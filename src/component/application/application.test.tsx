@@ -8,6 +8,7 @@ describe("Application", () => {
     const pageHeading = screen.getByRole("heading", {
       // name: "Job Application From",
       level: 1,
+      //level means h1 or h2 like this
     })
     expect(pageHeading).toBeInTheDocument()
 
@@ -55,6 +56,7 @@ describe("Application", () => {
     })
     expect(bioElement).toBeInTheDocument()
 
+    //option
     const jobLocationElement = screen.getByRole("combobox")
     expect(jobLocationElement).toBeInTheDocument()
 

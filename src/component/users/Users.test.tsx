@@ -16,7 +16,7 @@ describe("Users", () => {
   test("renders a list of users", async () => {
     render(<Users />)
     const users = await screen.findAllByRole("listitem")
-    //*setUpTest or test fail
+    //*setUpTest or test will be fail
     expect(users).toHaveLength(3)
   })
 
