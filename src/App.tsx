@@ -1,14 +1,21 @@
 import React from "react";
 import "./App.css";
 import { Application } from "./component/application/Application";
+import { Counter } from "./component/counter/Counter";
+import { MuiMode } from "./component/mui/MuiMode";
 import { Skills } from "./component/skills/Skills";
+import { AppProviders } from "./providers/AppProviders";
 
 function App() {
   return (
-    <div className="App">
-      <Application />
-      <Skills skills={["HTML", "CSS", "JavaScript"]} />
-    </div>
+    <AppProviders>
+      <div className="App">
+        {/* <Application /> */}
+        {/* <Skills skills={["HTML", "CSS", "JavaScript"]} /> */}
+        {/* <Counter /> */}
+        <MuiMode />
+      </div>
+    </AppProviders>
   );
 }
 

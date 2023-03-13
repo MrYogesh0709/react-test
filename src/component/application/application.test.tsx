@@ -18,10 +18,10 @@ describe("Application", () => {
     expect(sectionHeading).toBeInTheDocument();
 
     //1st method use any one
-    // const nameElement = screen.getByRole("textbox", {
-    //   name: "Name",
-    // });
-    // expect(nameElement).toBeInTheDocument();
+    const nameElement = screen.getByRole("textbox", {
+      name: "Name",
+    });
+    expect(nameElement).toBeInTheDocument();
 
     //2nd method:if incase second Name with Label use Selector:very unlikely
     const nameElement2 = screen.getByLabelText("Name", {
