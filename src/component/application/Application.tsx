@@ -38,8 +38,8 @@ export const Application = () => {
             <input type="checkbox" id="terms" />I Agree to Terms and Conditions
           </label>
         </div>
-        <button>Submit</button>
+        <button disabled>Submit</button>
       </form>
     </>
-  );
-};
+  )
+}
